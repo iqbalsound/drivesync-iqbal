@@ -1,0 +1,5 @@
+Component: main
+Origin: DriveSync by Iqbal
+Label: DriveSync
+Architecture: amd64
+Description: APT repository for DriveSync by Iqbal

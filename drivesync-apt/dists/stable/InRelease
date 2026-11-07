@@ -1,0 +1,56 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: DriveSync by Iqbal
+Label: DriveSync
+Codename: stable
+Date: Sat, 07 Nov 2026 15:24:40 UTC
+Architectures: amd64 arm64 armhf
+Components: main
+Description: APT repository for DriveSync by Iqbal
+MD5Sum:
+ 8a5b60d230f3d0f7125e46718f52ff79 745 main/binary-amd64/Packages
+ f531a92ebeb7308290b2805be94b0787 501 main/binary-amd64/Packages.gz
+ 9d9c41e91339bbfc03546fc52a3cd554 131 main/binary-amd64/Release
+ 8a5b60d230f3d0f7125e46718f52ff79 745 main/binary-arm64/Packages
+ f531a92ebeb7308290b2805be94b0787 501 main/binary-arm64/Packages.gz
+ 65c62fa577af659fbfc71b60ea5772bd 131 main/binary-arm64/Release
+ 8a5b60d230f3d0f7125e46718f52ff79 745 main/binary-armhf/Packages
+ f531a92ebeb7308290b2805be94b0787 501 main/binary-armhf/Packages.gz
+ 61d5eecb9444034cf150f1b6baa39e8d 131 main/binary-armhf/Release
+SHA1:
+ 22179b39010697262810388d62b29edb4baac947 745 main/binary-amd64/Packages
+ 161037d7c7f2e7027cfa480a5502df307bafbdda 501 main/binary-amd64/Packages.gz
+ bbe9a8d289817946540f3e5ca71a1616536de17b 131 main/binary-amd64/Release
+ 22179b39010697262810388d62b29edb4baac947 745 main/binary-arm64/Packages
+ 161037d7c7f2e7027cfa480a5502df307bafbdda 501 main/binary-arm64/Packages.gz
+ e0afdbe266c738f10b42e3a11cd4054e9c0b743b 131 main/binary-arm64/Release
+ 22179b39010697262810388d62b29edb4baac947 745 main/binary-armhf/Packages
+ 161037d7c7f2e7027cfa480a5502df307bafbdda 501 main/binary-armhf/Packages.gz
+ fcad9d68e7f96b11828d06ac7e69731d5b6787ae 131 main/binary-armhf/Release
+SHA256:
+ 04d79fa7dcfd01dd339136d837272e5dd28e30ec0572fdff155ed48a39238072 745 main/binary-amd64/Packages
+ d85d5af88fe761f8385eb92bd196cbb49ee08a85374cc4a4dceb25787b7e7f79 501 main/binary-amd64/Packages.gz
+ 197cba91dcec9a3a4045f07f8d1a26b4b017df62ab51cdaf69ee535b00c78b8f 131 main/binary-amd64/Release
+ 04d79fa7dcfd01dd339136d837272e5dd28e30ec0572fdff155ed48a39238072 745 main/binary-arm64/Packages
+ d85d5af88fe761f8385eb92bd196cbb49ee08a85374cc4a4dceb25787b7e7f79 501 main/binary-arm64/Packages.gz
+ 3e6a444ccb93655e0f0479878d07d70d98bc2a7c8b78c5d9273428b3d4c7bd5e 131 main/binary-arm64/Release
+ 04d79fa7dcfd01dd339136d837272e5dd28e30ec0572fdff155ed48a39238072 745 main/binary-armhf/Packages
+ d85d5af88fe761f8385eb92bd196cbb49ee08a85374cc4a4dceb25787b7e7f79 501 main/binary-armhf/Packages.gz
+ 931d56a5e1baaad76e14c81871f64dbfe10ae7b07023481eb6df49dbc4b4763f 131 main/binary-armhf/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEubvtqtw72Q/b7hbOWHcvBdHw0v8FAmrvQr4ACgkQWHcvBdHw
+0v8EjQ/+NxuquOZ86VYOwWQmKkjjGydh6cHowfPKWLkXke2mfrInAGy6WvNw9qil
+L/CmN8osoLE7g8pd0DW00RPpGCFZwNPFYEwqTbG3+7Xu6jAHl6O7M1MYItBHxljZ
+bBkjF00+QC2Yv6/ZgI89uz4V4rxntPxxYDZuhkYzCSu4mXQdojkYIAkfqoTtC97+
+QH4/4bn+gDcprByPRfebnSRvYy+dg9xFR0BWpUzAzgm4ldOZlGRbYk79/smyjOGI
+BOHTJjiAfMI+lQDreQOO+deqdy0gKbt5Iu7S74aY1TM49nm8fiZSvo4+PGfADHCD
+9i1GUQMc3Q8DldEIQsYBEqTYc39wgRkjGOPI74t222LNSiagAYWFC/rNn3ooNgku
+t0b2RummZpevQHgK+OUSCgUE9YsKBdVIZKjULjhyiu6lj9iz4e8fALjbTFCwgJtk
+AX79CWhuVzwsTM0+NUi+1n7SjbxKQe3Z8622AhrTtQlu/mtof/Et3rqvN1TUetTt
+pUZs92uCyk66UZL/B43fqy75dbm1HPBa4n5d2IWeKJ45xXKgms7Wuo6/f/Fg7kXz
+49IWeGZzGmgzLXelOf/aIb1XEBxBfL0aoUHyQmlDjHIDRvQXND5Dscch2PDXT3m0
+M4NinPeFqg4SPAmipjGpgCPQJSRC578LMSvYP3x4ujyzjvSi9mg=
+=yoKO
+-----END PGP SIGNATURE-----

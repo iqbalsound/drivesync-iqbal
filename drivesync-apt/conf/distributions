@@ -1,0 +1,7 @@
+Origin: DriveSync by Iqbal
+Label: DriveSync
+Codename: stable
+Architectures: amd64 arm64 armhf
+Components: main
+Description: APT repository for DriveSync by Iqbal
+SignWith: 58772F05D1F0D2FF

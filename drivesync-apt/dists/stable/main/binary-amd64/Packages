@@ -1,0 +1,17 @@
+Package: drivesync-iqbal
+Version: 2.0.0
+Architecture: all
+Depends: python3 (>= 3.8), python3-pyqt5, libqt5svg5, python3-googleapi, python3-google-auth-oauthlib
+Maintainer: Iqbal <iqbal@example.com>
+Priority: optional
+Section: net
+Filename: pool/main/d/drivesync-iqbal/drivesync-iqbal_2.0.0_all.deb
+Size: 20108
+SHA256: 997e68e859a3afd3060bd4118a8dbf97653f41673168283f73db747b249e715c
+SHA1: f21dadeb84ef43950c3b4686a9075750765d9c3f
+MD5sum: bc46f3ae978bfff1a31f5c543277817f
+Description: DriveSync by Iqbal - Google Drive sync client
+ Selective two-way sync between Google Drive and your computer.
+ Choose the folders to sync, sign in with one click, browse and export
+ the list of synced files as a tree, and switch between light and dark themes.
+
