@@ -38,3 +38,10 @@ Sync rules: newest file wins; deletions are never propagated; Google Docs/Sheets
 
 Or push a tag (`git tag -a v2.0.0 -m "v2.0.0" && git push origin v2.0.0`) and GitHub Actions builds
 everything and attaches it to the release.
+
+## Adding the Repo
+	curl -fsSL https://YOUR_USERNAME.github.io/drivesync-apt/drivesync-iqbal.gpg \ | sudo tee /usr/share/keyrings/drivesync-iqbal.gpg > /dev/null
+
+	echo "deb [signed-by=/usr/share/keyrings/drivesync-iqbal.gpg] https://YOUR_USERNAME.github.io/drivesync-apt stable main" \ | sudo tee /etc/apt/sources.list.d/drivesync-iqbal.list
+
+	sudo apt update && sudo apt install drivesync-iqbal
