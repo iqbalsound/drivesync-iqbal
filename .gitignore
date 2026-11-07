@@ -1,0 +1,6 @@
+build/
+*.deb
+__pycache__/
+*.pyc
+credentials.json
+token.json

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=DriveSync by Iqbal
+Comment=Sync Google Drive with your Linux laptop
+Exec=drivesync-iqbal
+Icon=drivesync-iqbal
+Terminal=false
+Type=Application
+Categories=Network;FileTransfer;Utility;
+StartupNotify=true

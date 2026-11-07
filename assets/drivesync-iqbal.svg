@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 90" width="256" height="256">
+  <!-- Drive-style placeholder icon. Swap in Google's official asset if you need the real logo. -->
+  <polygon points="33,5 55,5 26,57 4,57" fill="#0F9D58"/>
+  <polygon points="55,5 33,5 71,70 93,70" fill="#F4B400"/>
+  <polygon points="26,57 93,57 82,76 15,76" fill="#4285F4"/>
+</svg>
