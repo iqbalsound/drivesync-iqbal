@@ -1,0 +1,68 @@
+name: Build and release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inject OAuth client (optional secrets)
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+        run: python3 packaging/inject_client.py
+      - name: Tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Install rpm tooling
+        run: sudo apt-get update && sudo apt-get install -y rpm
+      - name: Build DEB
+        run: bash packaging/linux/build_deb.sh
+      - name: Build RPM
+        run: bash packaging/linux/build_rpm.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-packages
+          path: dist/*
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Inject OAuth client (optional secrets)
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+        run: python packaging/inject_client.py
+      - run: python -m pip install -r requirements.txt pyinstaller
+      - name: Install Inno Setup
+        run: choco install innosetup -y --no-progress
+      - name: Build installer and portable ZIP
+        run: python packaging/windows/build_windows.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-packages
+          path: dist/*
+
+  release:
+    needs: [linux, windows]
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*
+          generate_release_notes: true

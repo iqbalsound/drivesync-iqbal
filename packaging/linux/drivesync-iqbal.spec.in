@@ -1,0 +1,52 @@
+Name:           drivesync-iqbal
+Version:        @VERSION@
+Release:        1%{?dist}
+Summary:        DriveSync by Iqbal - Google Drive sync client
+License:        MIT
+BuildArch:      noarch
+Source0:        %{name}-%{version}.tar.gz
+Requires:       python3
+Requires:       python3-qt5
+Requires:       qt5-qtsvg
+Requires:       python3-google-api-client
+Requires:       python3-google-auth-oauthlib
+
+%description
+Selective two-way sync between Google Drive and your computer. Choose the
+folders to sync, sign in with one click, browse and export the list of synced
+files as a tree, and switch between light and dark themes.
+
+%prep
+%setup -q
+
+%build
+# nothing to build (pure Python)
+
+%install
+install -d %{buildroot}%{_prefix}/lib/%{name}
+cp -a drivesync_iqbal %{buildroot}%{_prefix}/lib/%{name}/
+find %{buildroot}%{_prefix}/lib/%{name} -name __pycache__ -type d -prune -exec rm -rf {} +
+rm -f %{buildroot}%{_prefix}/lib/%{name}/drivesync_iqbal/assets/*.ico
+install -D -m 0755 packaging/linux/launcher.sh %{buildroot}%{_bindir}/%{name}
+install -D -m 0644 packaging/linux/%{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
+install -D -m 0644 drivesync_iqbal/assets/%{name}.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
+install -D -m 0644 drivesync_iqbal/assets/%{name}.png %{buildroot}%{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+
+%post
+gtk-update-icon-cache -q %{_datadir}/icons/hicolor >/dev/null 2>&1 || :
+
+%postun
+gtk-update-icon-cache -q %{_datadir}/icons/hicolor >/dev/null 2>&1 || :
+
+%files
+%license LICENSE
+%doc README.md
+%{_bindir}/%{name}
+%{_prefix}/lib/%{name}
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
+%{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+
+%changelog
+* Sat Nov 07 2026 Iqbal <iqbal@example.com> - @VERSION@-1
+- Selective folder sync, one-click Google sign-in, synced-files tree export

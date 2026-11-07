@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="256" height="256">
+  <!-- Original Drive-style icon. Replace with official assets if you need Google's logo. -->
+  <polygon points="44,12 66,12 96,67 74,67" fill="#FFBA00"/>
+  <polygon points="34,12 56,12 26,67 4,67" fill="#00AC47"/>
+  <polygon points="4,67 96,67 85,89 15,89" fill="#2684FC"/>
+</svg>

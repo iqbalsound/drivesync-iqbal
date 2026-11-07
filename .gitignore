@@ -1,5 +1,7 @@
 build/
+dist/
 *.deb
+*.rpm
 __pycache__/
 *.pyc
 credentials.json

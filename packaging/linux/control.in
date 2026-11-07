@@ -1,10 +1,11 @@
 Package: drivesync-iqbal
-Version: 1.0.0
+Version: @VERSION@
 Section: net
 Priority: optional
 Architecture: all
 Depends: python3 (>= 3.8), python3-pyqt5, libqt5svg5, python3-googleapi, python3-google-auth-oauthlib
 Maintainer: Iqbal <iqbal@example.com>
 Description: DriveSync by Iqbal - Google Drive sync client
- Two-way folder sync between Google Drive and your Linux laptop,
- with system tray, auto-sync and light/dark themes.
+ Selective two-way sync between Google Drive and your computer.
+ Choose the folders to sync, sign in with one click, browse and export
+ the list of synced files as a tree, and switch between light and dark themes.
